@@ -1,0 +1,53 @@
+.pg-board-container {
+    position: relative;
+    border-radius :8px;
+    user-select: none; /* Prevent text selection */
+    -webkit-user-select: none; /* For Safari */
+    -ms-user-select: none; /* For older versions of IE */
+  }
+  .pg-board-container > .pg-card {
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #fff;
+    width: calc(100% - 64px);
+    position: absolute;
+    display: flex;
+    border: 1px solid #ddd;
+    align-items: flex-start;
+    transition: top 0.18s cubic-bezier(0.22, 0.61, 0.36, 1),
+      transform 0.14s ease,
+      box-shadow 0.14s ease;
+
+  }
+  .pg-board-container > .pg-card.pg-card-active {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    z-index: 99;
+    transform: scale(1.05);
+    transition: transform 0.14s ease, box-shadow 0.14s ease;
+  }
+  .pg-grab-btn {
+    cursor: grab;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    padding: 4px;
+  }
+  .pg-grab-btn-active {
+    cursor: grab;
+    cursor: grabbing;
+  }
+  .pg-card-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+  }
+  .pg-card-wrapper {
+    width: calc(100% - 50px);
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
