@@ -1,10 +1,13 @@
 {
   "name": "perdana-draggable-list",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
-    "dist"
+    "dist",
+    "docs",
+    "README.md",
+    "LICENSE"
   ],
   "sideEffects": [
     "*.css"
@@ -13,13 +16,27 @@
     "build": "webpack --env target=library --mode production",
     "dev": "webpack serve --env target=demo --mode development"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "drag-and-drop",
+    "draggable",
+    "draggable-list",
+    "sortable",
+    "sortable-list",
+    "reorder",
+    "reorder-list",
+    "list",
+    "cards",
+    "dnd",
+    "reorderable"
+  ],
+  "repository": "github:agungpg/perdana-draggable-list",
   "author": "",
   "license": "ISC",
   "description": "",
-  "dependencies": {
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",

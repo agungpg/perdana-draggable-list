@@ -26,6 +26,19 @@ const App = () => {
           data={data}
           onDragStart={(i) => console.log("start", i)}
           onDragEnd={(start, end, next) => setData(next)}
+          renderItem={(index, item) => (
+          <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+            <strong>{item.title}</strong>
+            <textarea
+              value={item.description}
+              onChange={(e) => {
+                const next = [...data];
+                next[index].description = e.target.value;
+                setData(next);
+              }}
+            />
+          </div>
+        )}
         />
     </div>
   )

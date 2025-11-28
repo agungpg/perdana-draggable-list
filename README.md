@@ -2,8 +2,9 @@
 
 React drag-and-drop list with a grab handle and automatic sizing for variable-height cards.
 
-## Demo video
-[Watch the demo](docs/media/demo.mp4) — place your video file at `docs/media/demo.mp4` (or swap this link for a hosted URL like YouTube/Loom).
+## Demo
+![Perdana Draggable List demo](docs/assets/demo.gif)
+
 
 ## Features
 - Drag to reorder by clicking a handle (no full-card drag conflicts with inputs).
